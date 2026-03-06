@@ -1,5 +1,3 @@
-const Header = () => {
-    return <header>Шапка сайта</header>
-}
+const Header = () => <header>Шапка сайта</header>
 
 export default Header
