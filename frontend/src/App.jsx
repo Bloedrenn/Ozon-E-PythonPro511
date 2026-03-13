@@ -11,19 +11,13 @@ function App() {
   const [tempText, setTempText] = useState("Hello World!")
   const [userText, setUserText] = useState("")
 
-  // document.title = `Вы нажали ${count} раз`
-
-  // const testFunc = () => {
-  //   document.title = `Вы нажали ${count} раз`
-  // }
-  // testFunc()
-
   useEffect(
     () => {
-      document.title = `Вы нажали ${count} раз`
-    }
+      document.title = "Добро пожаловать!"
+    },
+    []
   )
-  // Функция в таком варианте useEffect вызывается: 1. При монтировании компонента. 2. При повторном рендере компонента.
+  // Функция в таком варианте useEffect вызывается только при монтировании компонента.
 
   const pHover = () => { 
     console.log("Навели на p")
